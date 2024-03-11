@@ -1,7 +1,6 @@
 import React from 'react'
-import ExculsiveImg from './Images/exclusive_image.png'
 
-export default function Banner() {
+export default function Banner({ExcuisveImg}) {
   return (
     <div className="Hero--Component Banner">
       <div className="cont--1">
@@ -14,7 +13,7 @@ export default function Banner() {
         <button className="btn">Check Now</button>
       </div>
       <div className="cont--2">
-        <img src={ExculsiveImg} alt="" />
+        <img src={ExcuisveImg} alt="" />
       </div>
     </div>
   )

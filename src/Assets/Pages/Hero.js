@@ -2,10 +2,15 @@ import React from "react";
 import HeroImg from "./Images/hero_image.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandSpock } from "@fortawesome/free-regular-svg-icons";
+import Popular from "./Popular";
+import Banner from "./Banner";
+import NewCollectionComp from './NewCollection';
+import ExcuisveImg from './Images/exclusive_image.png'
 
 export default function Hero() {
    
   return (
+    <>
     <div className="Hero--Component">
       <div className="cont--1">
         <p>New Arrivals Only</p>
@@ -30,5 +35,9 @@ export default function Hero() {
         <img src={HeroImg} alt="" />
       </div>
     </div>
+    <Popular/>
+    <Banner ExcuisveImg={ExcuisveImg} />
+    <NewCollectionComp/>
+    </>
   );
 }
